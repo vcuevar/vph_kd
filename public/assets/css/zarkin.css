@@ -1,0 +1,42 @@
+#page-wrapper2 {
+    width: 100%;
+    padding: 0;
+    background-color: #fff9fb;
+
+}
+body {
+    margin-top: 50px;
+    background-color: #fff9fb;
+}
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #3a3327;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }}
+
+.dataTables_filter{
+    width: 50%;
+    float: right;
+    margin-bottom: 10px;
+}
+.dataTables_filter label{
+    float: right;
+}
+.dataTables_filter label input{
+    width: 300px;
+    display: inline;
+    margin-left: 10px;
+    background-color: #0000FF;
+    color: #0fb2fc;
+}
