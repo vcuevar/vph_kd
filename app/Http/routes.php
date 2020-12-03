@@ -366,6 +366,13 @@ Route::get('home/ayudas_pdf/{PdfName}', 'HomeController@showPdf');
 Route::get('home/{r0}/ayudas_pdf/{PdfName}', 'HomeController@showPdf2');
 //
 //-------------------------//
+//PLANEACION GENERAR OP//---------------------------------------------------------
+//-------------------------//
+//
+Route::get('home/GENERAR OP', 'Mod02_PlaneacionController@indexGenerarOP')->middleware('routelog');
+Route::any('datatables.gop', 'Mod02_PlaneacionController@registros_gop')->name('datatables.gop');
+//
+//-------------------------//
 //RUTAS DE PRODUCCION POR AREAS//---------------------------------------------------------
 //-------------------------//
 //

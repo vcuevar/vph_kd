@@ -58,8 +58,7 @@
     <script src="{{ URL::asset('assets/DataTables/js/dataTables.tableTools.js')}}"></script>
     {!! Html::script('assets/js/dataTables.editor.min.js') !!}
     
-    <script src="{{ URL::asset('plugins/bootstrap-dialog/prettify/run_prettify.js')}}"></script>
-    <script src="{{ URL::asset('plugins/bootstrap-dialog/js/bootstrap-dialog.min.js')}}"></script>
+   
     <script src="{{ URL::asset('assets/bootbox/bootbox.min.js' )}}"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
