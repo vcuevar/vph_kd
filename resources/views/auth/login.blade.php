@@ -19,7 +19,7 @@
         // Check that all required assets are uploaded and up-to-date
         if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
     </script>
-    <title>Inicio</title>
+    <title>KD Beuty</title>
     <link rel="shortcut icon" href="images/IconZrk.ico" type="image/x-icon" >
     <link rel="icon" href="imagen/IconoZain.png" sizes="32x32" ><link rel="icon"
 
