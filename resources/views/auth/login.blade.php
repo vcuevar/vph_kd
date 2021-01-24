@@ -21,7 +21,7 @@
     </script>
     <title>KD Beuty</title>
     <link rel="shortcut icon" href="images/IconZrk.ico" type="image/x-icon" >
-    <link rel="icon" href="imagen/IconoZain.png" sizes="32x32" ><link rel="icon"
+    <link rel="icon" href="images/IconoZain.png" sizes="32x32" ><link rel="icon"
 
 </head>
 <style> 
@@ -31,7 +31,7 @@ input[type=number]::-webkit-inner-spin-button{
 }
 
 </style>
-<body class="container-fluid" style=" background-image: url({{ URL::asset('images/fondo.jpg') }});
+<body class="container-fluid" style=" background-image: url({{ URL::asset('images/fondo_kd.jpg') }});
         background-repeat:no-repeat;
         background-size:cover;
         background-position:center;">
@@ -42,9 +42,9 @@ input[type=number]::-webkit-inner-spin-button{
     </div>
     <div class="row" ><!-- column -->
         <p align="center"  ><!-- svg -->
-            <img class="svg hidden-xs" id="u196" src={{ URL::asset('images/svg-pegado-150982x45.svg') }} alt="" data-mu-svgfallback="/siz/public/images/svg%20pegado%20150982x45_poster_.png?crc=4279418901" width="200" height="200"
+            <img class="svg hidden-xs" id="u196" src={{ URL::asset('images/logo_kd.png') }} alt="" data-mu-svgfallback="/siz/public/images/svg%20pegado%20150982x45_poster_.png?crc=4279418901" width="200" height="200"
            />
-            <img class="svg visible-xs" id="u196" src={{ URL::asset('images/svg-pegado-150982x45.svg') }}  alt="" data-mu-svgfallback="/siz/public/images/svg%20pegado%20150982x45_poster_.png?crc=4279418901" width="200" height="200"
+            <img class="svg visible-xs" id="u196" src={{ URL::asset('images/logo_kd.png') }}  alt="" data-mu-svgfallback="/siz/public/images/svg%20pegado%20150982x45_poster_.png?crc=4279418901" width="200" height="200"
             style="margin-top: -30%"/>
 
         <p style="margin-top: 5%" align="center"><!-- none box -->
