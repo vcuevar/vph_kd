@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use Illuminate\Http\Request;
 class LoginController extends Controller
 {
     /*
@@ -36,4 +36,12 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+    public function username()
+    {
+        $field = (filter_var(request()->login, FILTER_VALIDATE_EMAIL) || !request()->login) ? 'email' : 'usuario';
+        request()->merge([$field => request()->login]);
+        return $field;
+    }
+
+    
 }

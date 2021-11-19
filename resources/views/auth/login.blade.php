@@ -122,11 +122,28 @@
     <body>
         <section class="form-login">
             <h5>Iniciar Sesión</h5>
-            <input class="controls" type="text" id="usuario" placeholder="Usuario">
-            <input class="controls" type="password" id="contrasena" placeholder="Contraseña" onkeypress="pulsarenter(event)">
-            <input class="buttons" type="submit" id="ingresarbt" value="Ingresar" onclick="buscarusua()">
+            <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                {{ csrf_field() }}
 
-            <p><a href="#"> ¿Olvidaste tu Contraseña? </a> </p>
+                <input class="controls" type="text" id="login"
+                name="login" placeholder="Usuario"
+                required 
+                autocomplete="login" 
+                autofocus
+                value="{{ old('usuario') ?: old('email') }}" >
+                @if ($errors->has('login'))
+                    <span class=”help-block”>
+                    <strong>{{ $errors->first('login') }}</strong>
+                    </span>
+                @endif
+                <input class="controls" type="password" id="password" name="password"
+                placeholder="Contraseña" onkeypress="pulsarenter(event)">
+                <input class="buttons" type="submit" id="ingresarbt" value="Ingresar" 
+                onclick="buscarusua()">
+
+                <p><a  href="{{ route('password.request') }}"> ¿Olvidaste tu Contraseña? </a> </p>
+
+        </form>
         </section>
     </body>
 </html>
