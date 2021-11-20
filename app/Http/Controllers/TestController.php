@@ -11,11 +11,12 @@ class TestController extends Controller
     public function test()
     {
         // Añadir personaje
-        $role = Role::create(['name' => 'empleado']);
+        $role = Role::create(['name' => 'alumno']);
         //Role::create(['name' => 'alumno']);
-        $role->givePermissionTo('role-list');
+        //$role->givePermissionTo('role-list');
 
-        $user = User::find(1);
+        $user = User::find(7);
         $user->assignRole('empleado');
+        
     }
 }

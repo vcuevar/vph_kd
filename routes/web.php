@@ -25,3 +25,10 @@ Route::group(['middleware' => ['auth']], function() {
 });
 
 Route::get('/test','TestController@test'); 
+
+//Route::get('/home/registro_alumno', 'AlumnoController@registro')
+Route::get('/home/registro_alumno', function(){
+ return view('alumnos.registro');
+});
+
+Route::post('guardar_alumno', 'AlumnoController@store');
